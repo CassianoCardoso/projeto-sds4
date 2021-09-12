@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Chart from 'react-apexcharts'
 import { SaleSuccess } from 'types/sale';
+import { round } from 'utils/format';
 import { BASE_URL } from 'utils/request';
 
 type SeriesData={
@@ -69,7 +70,7 @@ const BarChart = () => {
     
     return (
      <Chart
-       options={{...options,xaxis : chartData.labels}}
+       options={{ ...options, xaxis : chartData.labels}}
        series={chartData.series}
        type="bar"
        height="240"
@@ -79,6 +80,4 @@ const BarChart = () => {
   
   export default BarChart;
 
-function round(arg0: number, arg1: number): any {
-    throw new Error('Function not implemented.');
-}
+
