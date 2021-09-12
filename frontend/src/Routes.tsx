@@ -1,7 +1,7 @@
 import Home from 'pages/Home';
 import Dashboard from 'pages/DashBoard';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import react from 'react';
+//import react from 'react';
 
 const Routes = () => {
   return (

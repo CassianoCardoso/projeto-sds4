@@ -1,5 +1,5 @@
 
-export type SaleSum={
+export type SaleSum = {
     sellerName: string;
     sum: number;
 }
